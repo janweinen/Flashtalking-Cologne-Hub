@@ -10,7 +10,7 @@ const Head = styled.header`
   justify-content: space-between;
   width: 100vw;
   height: 64px;
-  border-bottom: 3px solid #d6d8db;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   background-color: #374047;
   color: rgba(255, 255, 255, 1);
   padding-left: 20px;

@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Card from "./Card";
 import styled from "styled-components";
+import Background from "../../images/hub-bg.png";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -16,21 +17,21 @@ import {} from "@fortawesome/free-regular-svg-icons";
 
 library.add(faUser, faFolderOpen, faExpand, faCircleNotch, faSignOutAlt);
 
-const style = {
-  body: {
-    height: "100vh",
-    fontFamily: "Open Sans",
-    backgroundColor: "#f4f5f5"
-  }
-};
+const Main = styled.div`
+  height: 100vh;
+  font-family: Open Sans;
+  background-image: url(${Background}),
+    linear-gradient(to right, #374047 0%, #4a5258 50%);
+`;
 
 const Content = styled.div`
-  margin: 0 auto;
-  width: 100%;
+  margin: 60px auto;
+  max-width: 80%;
 `;
+
 const Body = () => {
   return (
-    <div style={style.body}>
+    <Main>
       <Header />
       <Content>
         <Card
@@ -77,7 +78,7 @@ const Body = () => {
         />
       </Content>
       <Footer />
-    </div>
+    </Main>
   );
 };
 

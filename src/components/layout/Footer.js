@@ -4,10 +4,12 @@ import pkg from "../../../package.json";
 
 const FooterContainer = styled.footer`
   width: 100%;
-  color: #374047;
+  color: #ffffff;
   font-size: 9px;
   text-align: center;
   padding: 5px;
+  position: absolute;
+  bottom: 0;
 `;
 
 const Footer = () => {
