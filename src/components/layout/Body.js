@@ -34,42 +34,42 @@ const Body = () => {
       <Header />
       <Content>
         <Card
-          href="https://www.flashtalking.info/app/"
+          href="https://www.flashtalking.info/library/"
           title="Library"
           bgColor="#9b0649"
           icon="folder-open"
           text="Store demolinks and files."
         />
         <Card
-          href="https://www.flashtalking.info/app/"
+          href="#"
           title="Placeholder"
           bgColor="darkgrey"
           icon="expand"
           text="Lorem ipsum dolor sit amet."
         />
         <Card
-          href="https://www.flashtalking.info/app/"
+          href="#"
           title="Placeholder"
           bgColor="darkgrey"
           icon="expand"
           text="Lorem ipsum dolor sit amet."
         />
         <Card
-          href="https://www.flashtalking.info/app/"
+          href="#"
           title="Placeholder"
           bgColor="darkgrey"
           icon="expand"
           text="Lorem ipsum dolor sit amet."
         />
         <Card
-          href="https://www.flashtalking.info/app/"
+          href="#"
           title="Placeholder"
           bgColor="darkgrey"
           icon="expand"
           text="Lorem ipsum dolor sit amet."
         />
         <Card
-          href="https://www.flashtalking.info/app/"
+          href="#"
           title="Placeholder"
           bgColor="darkgrey"
           icon="expand"

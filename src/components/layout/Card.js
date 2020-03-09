@@ -46,7 +46,7 @@ const Link = styled.a`
 const Card = props => {
   return (
     <CardContainer bgColor={props.bgColor}>
-      <Link href={props.href}>
+      <Link href={props.href} target="_blank">
         <IconContainer>
           <Icon icon={["fas", props.icon]} />
         </IconContainer>
