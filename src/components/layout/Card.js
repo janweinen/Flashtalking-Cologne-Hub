@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CardContainer = styled.div`
   width: calc(50% - 30px);
-  margin: 20px 0 20px 20px;
-  height: 160px;
+  margin: 20px 0 0 20px;
   cursor: pointer;
   border-radius: 3px;
   background-color: ${props => props.bgColor};
@@ -24,15 +23,34 @@ const IconContainer = styled.div`
   margin: 20px;
   border: 3px solid #ffffff;
   border-radius: 3px;
+  display: inline-block;
+`;
+
+const TitleContainer = styled.div`
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  color: #ffffff;
+`;
+
+const TextContainer = styled.div`
+  font-size: 12px;
+  color: #ffffff;
 `;
 
 const Card = props => {
   return (
     <CardContainer bgColor={props.bgColor}>
-      <IconContainer>
-        <Icon icon={["fas", props.icon]} />
-      </IconContainer>
-      <a href={props.href}>{props.title}</a>
+      <a href={props.href}>
+        <IconContainer>
+          <Icon icon={["fas", props.icon]} />
+        </IconContainer>
+        <TitleContainer>
+          {props.title}
+          <TextContainer>{props.text}</TextContainer>
+        </TitleContainer>
+      </a>
     </CardContainer>
   );
 };

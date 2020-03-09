@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { auth, database } from "./components/Firebase";
+import { auth } from "./components/Firebase";
 import Login from "./components/layout/Login";
 import Body from "./components/layout/Body";
 import { DataProvider } from "./components/Context";
@@ -16,7 +16,6 @@ const App = () => {
     return forname + " " + surname;
   };
   const [data, setData] = useState({ signedIn: false });
-  const [content, setContent] = useState("Demo");
   useEffect(() => {
     let collection = {};
     try {
@@ -30,26 +29,7 @@ const App = () => {
               name: returnNameFromEmail(user.email)
             }
           };
-          const unsubscribe = database
-            .collection("Data")
-            .where("category", "==", content)
-            .orderBy("timestamp", "desc")
-            .onSnapshot(snapshot => {
-              let entries = [];
-              if (snapshot.size) {
-                snapshot.forEach(doc =>
-                  entries.push({ ...doc.data(), id: doc.id })
-                );
-                collection = {
-                  ...collection,
-                  entries: entries,
-                  content: content,
-                  setContent: { setContent },
-                  unsubscribe: { unsubscribe }
-                };
-                setData(collection);
-              }
-            });
+          setData(collection);
         } else {
           collection = {
             signedIn: false
@@ -60,7 +40,7 @@ const App = () => {
     } catch (error) {
       console.log(error);
     }
-  }, [content]);
+  }, []);
   return (
     <DataProvider value={data}>
       <div>{data.signedIn ? <Body /> : <Login />}</div>
