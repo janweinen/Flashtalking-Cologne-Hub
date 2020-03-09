@@ -39,10 +39,14 @@ const TextContainer = styled.div`
   color: #ffffff;
 `;
 
+const Link = styled.a`
+  display: block;
+`;
+
 const Card = props => {
   return (
     <CardContainer bgColor={props.bgColor}>
-      <a href={props.href}>
+      <Link href={props.href}>
         <IconContainer>
           <Icon icon={["fas", props.icon]} />
         </IconContainer>
@@ -50,7 +54,7 @@ const Card = props => {
           {props.title}
           <TextContainer>{props.text}</TextContainer>
         </TitleContainer>
-      </a>
+      </Link>
     </CardContainer>
   );
 };
