@@ -11,11 +11,21 @@ import {
   faFolderOpen,
   faExpand,
   faCircleNotch,
-  faSignOutAlt
+  faSignOutAlt,
+  faPalette,
+  faMapMarked
 } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-regular-svg-icons";
 
-library.add(faUser, faFolderOpen, faExpand, faCircleNotch, faSignOutAlt);
+library.add(
+  faUser,
+  faFolderOpen,
+  faExpand,
+  faCircleNotch,
+  faSignOutAlt,
+  faPalette,
+  faMapMarked
+);
 
 const Main = styled.div`
   height: 100vh;
@@ -37,23 +47,23 @@ const Body = () => {
         <Card
           href="https://www.flashtalking.info/library/"
           title="Library"
-          bgColor="#9b0649"
+          bgColor="#d11560"
           icon="folder-open"
-          text="Store demolinks and files."
+          text="Store ad previews and files."
         />
         <Card
-          href="#"
-          title="Placeholder"
-          bgColor="darkgrey"
-          icon="expand"
-          text="Lorem ipsum dolor sit amet."
+          href="https://www.flashtalking.info/preview/setup/"
+          title="Creative Preview"
+          bgColor="#1771B9"
+          icon="palette"
+          text="Create ad previews."
         />
         <Card
-          href="#"
-          title="Placeholder"
-          bgColor="darkgrey"
-          icon="expand"
-          text="Lorem ipsum dolor sit amet."
+          href="https://flashtalking.info/Studio/Streiko/defaultStores/"
+          title="Storelocator Default Generator"
+          bgColor="#40b658"
+          icon="map-marked"
+          text="Create proximity data for storelocator."
         />
         <Card
           href="#"
