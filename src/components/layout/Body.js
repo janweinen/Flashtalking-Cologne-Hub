@@ -13,7 +13,8 @@ import {
   faCircleNotch,
   faSignOutAlt,
   faPalette,
-  faMapMarked
+  faMapMarked,
+  faTasks
 } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-regular-svg-icons";
 
@@ -24,7 +25,8 @@ library.add(
   faCircleNotch,
   faSignOutAlt,
   faPalette,
-  faMapMarked
+  faMapMarked,
+  faTasks
 );
 
 const Main = styled.div`
@@ -66,11 +68,11 @@ const Body = () => {
           text="Create proximity data for storelocator."
         />
         <Card
-          href="#"
-          title="Placeholder"
-          bgColor="darkgrey"
-          icon="expand"
-          text="Lorem ipsum dolor sit amet."
+          href="https://www.flashtalking.info/TCFBulkRegen/"
+          title="TCF Bulk Regen"
+          bgColor="#d95652"
+          icon="tasks"
+          text="Regenerate tags to be TCF compliant"
         />
         <Card
           href="#"
