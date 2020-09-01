@@ -14,7 +14,8 @@ import {
   faSignOutAlt,
   faPalette,
   faMapMarked,
-  faTasks
+  faTasks,
+  faEraser
 } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-regular-svg-icons";
 
@@ -26,7 +27,8 @@ library.add(
   faSignOutAlt,
   faPalette,
   faMapMarked,
-  faTasks
+  faTasks,
+  faEraser
 );
 
 const Main = styled.div`
@@ -68,11 +70,11 @@ const Body = () => {
           text="Create proximity data for storelocator."
         />
         <Card
-          href="https://www.flashtalking.info/TCFBulkRegen/"
-          title="TCF Bulk Regen"
+          href="https://www.flashtalking.info/gdprRemover/"
+          title="TCF Macro Remover"
           bgColor="#d95652"
-          icon="tasks"
-          text="Regenerate tags to be TCF compliant"
+          icon="eraser"
+          text="Remove TCF macros from FT Tags"
         />
         <Card
           href="#"
