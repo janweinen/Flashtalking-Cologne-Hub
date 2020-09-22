@@ -15,7 +15,8 @@ import {
   faPalette,
   faMapMarked,
   faTasks,
-  faEraser
+  faEraser,
+  faHandsHelping
 } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-regular-svg-icons";
 
@@ -28,7 +29,8 @@ library.add(
   faPalette,
   faMapMarked,
   faTasks,
-  faEraser
+  faEraser,
+  faHandsHelping
 );
 
 const Main = styled.div`
@@ -71,10 +73,10 @@ const Body = () => {
         />
         <Card
           href="https://www.flashtalking.info/gdprRemover/"
-          title="TCF Macro Remover"
+          title="TCF Helper"
           bgColor="#d95652"
-          icon="eraser"
-          text="Remove TCF macros from FT Tags"
+          icon="hands-helping"
+          text="is helping."
         />
         <Card
           href="#"
