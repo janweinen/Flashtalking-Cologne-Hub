@@ -72,7 +72,7 @@ const Body = () => {
           text="Create proximity data for storelocator."
         />
         <Card
-          href="https://www.flashtalking.info/gdprRemover/"
+          href="https://www.flashtalking.info/tcfHelper/"
           title="TCF Helper"
           bgColor="#d95652"
           icon="hands-helping"
