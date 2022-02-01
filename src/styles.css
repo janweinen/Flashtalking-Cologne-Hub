@@ -6,10 +6,6 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
-* {
-  font-family: "Open Sans", sans-serif;
-}
-
 *,
 *:before,
 *:after {
@@ -17,6 +13,6 @@ html {
 }
 
 .App {
-  font-family: "Open Sans", sans-serif;
+  font-family: sans-serif;
   text-align: center;
 }
