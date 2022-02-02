@@ -87,7 +87,7 @@ const App = () => {
             user: {
               uid: user.uid,
               email: user.email,
-              name: returnNameFromEmail(user.email)
+              name: returnNameFromEmail(user)
             }
           };
           setData(collection);
